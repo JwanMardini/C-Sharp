@@ -91,3 +91,24 @@ sum(10, 20);*/
 
 Console.WriteLine(isAlpha('a'));
 Console.WriteLine(isAlpha('ش'));*/
+
+/*while (true)
+{
+    Random random = new Random();
+    int[] lottRad = new int[7];
+    for (int i = 0; i < lottRad.Length; i++)
+    {
+        lottRad[i] = random.Next(1, 36);
+    }
+
+    Console.WriteLine("Press Enter to get a lottRad: ");
+    Console.ReadLine();
+    foreach(int num  in lottRad)
+    {
+        Console.Write(num);
+    }
+    Console.WriteLine();
+
+}*/
+
+    
