@@ -1,0 +1,15 @@
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\bin\Debug\net8.0\ShoppingBasketApplication.exe
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\bin\Debug\net8.0\ShoppingBasketApplication.deps.json
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\bin\Debug\net8.0\ShoppingBasketApplication.runtimeconfig.json
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\bin\Debug\net8.0\ShoppingBasketApplication.dll
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\bin\Debug\net8.0\ShoppingBasketApplication.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.AssemblyInfoInputs.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.AssemblyInfo.cs
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.csproj.CoreCompileInputs.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.sourcelink.json
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.dll
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\refint\ShoppingBasketApplication.dll
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ShoppingBasketApplication.genruntimeconfig.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-\Malmö\ShoppingBasketApplication\ShoppingBasketApplication\obj\Debug\net8.0\ref\ShoppingBasketApplication.dll
