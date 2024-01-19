@@ -1,1 +1,1 @@
-C:\Users\jwan9\OneDrive\Skrivbord\C-\Karlstad\UWPApp\UWPApp\UWPApp.csproj;x86
+C:\Users\jwanl\OneDrive\Desktop\C-\Karlstad\UWPApp\UWPApp\UWPApp.csproj;x86

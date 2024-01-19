@@ -10255,18 +10255,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jwan9\\.nuget\\packages\\": {},
+    "C:\\Users\\jwanl\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Karlstad\\UWPApp\\UWPApp\\UWPApp.csproj",
+      "projectUniqueName": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Karlstad\\UWPApp\\UWPApp\\UWPApp.csproj",
       "projectName": "UWPApp",
-      "projectPath": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Karlstad\\UWPApp\\UWPApp\\UWPApp.csproj",
-      "packagesPath": "C:\\Users\\jwan9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Karlstad\\UWPApp\\UWPApp\\obj\\",
+      "projectPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Karlstad\\UWPApp\\UWPApp\\UWPApp.csproj",
+      "packagesPath": "C:\\Users\\jwanl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Karlstad\\UWPApp\\UWPApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10274,7 +10274,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jwan9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jwanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
