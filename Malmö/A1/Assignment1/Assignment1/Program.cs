@@ -30,7 +30,10 @@
             Console.Write("Press Enter to start next part!");
             Console.ReadLine();
 
-
+            classUsed = "CarStore";
+            Console.Title = classUsed;
+            CarStore carStore = new CarStore();
+            carStore.Start();
         }
 
         static void SetupConsoleWindow()
