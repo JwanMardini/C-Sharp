@@ -5,6 +5,9 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage.Pickers;
+using Windows.Storage.Pickers.Provider;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -28,7 +31,68 @@ namespace UWPApp
             this.InitializeComponent(); // It creats all components
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            var fileOpen = new FileOpenPicker();
+            fileOpen.FileTypeFilter.Add(".txt");
+            var result = await fileOpen.PickSingleFileAsync();
+
+            if (result != null)
+            {
+                var text = await Windows.Storage.FileIO.ReadTextAsync(result);
+                Mytext.Text = text;
+                
+            }
+
+
+        }
+
+
+        // File picker
+        //private async void MyButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    var fileSavePicker = new FileSavePicker();
+        //    fileSavePicker.FileTypeChoices.Add("Plain Text", new List<string>() { ".txt"});
+        //    var result = await fileSavePicker.PickSaveFileAsync();
+
+        //    if (result != null)
+        //    {
+        //        await Windows.Storage.FileIO.WriteTextAsync(result, "Test123");
+        //    }
+
+
+        //}
+
+        //private async void MyButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    MessageDialog ms = new MessageDialog("Do you want to retry");
+        //    /*ms.Commands.Add(new UICommand("YES", x =>
+        //    {
+        //        MyButton.Content = "you clicked yes";
+        //    }));
+        //    ms.Commands.Add(new UICommand("NO", x =>
+        //    {
+        //        MyButton.Content = "you clicked no";
+        //    }));*/
+
+        //    ms.Commands.Add(new UICommand("Yes"));
+        //    ms.Commands.Add(new UICommand("No"));
+        //    var result = await ms.ShowAsync();
+
+        //    if(result.Label == "Yes")
+        //    {
+        //        MyButton.Content = "yes";
+        //    }
+        //    else
+        //    {
+        //        MyButton.Content = "no";
+        //    }
+
+
+
+        //}
+
+        /*private void Button_Click(object sender, RoutedEventArgs e)
         {
             clicks++;
             MyText.Text = $"You clicked {clicks} times";
@@ -38,6 +102,6 @@ namespace UWPApp
         {
             MyText1.Text = InputText.Text.Length.ToString();
 
-        }
+        }*/
     }
 }

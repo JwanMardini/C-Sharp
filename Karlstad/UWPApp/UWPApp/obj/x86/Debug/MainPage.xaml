@@ -34,7 +34,7 @@
         <TextBox Height="50" VerticalAlignment="Top" Margin="10" Grid.Column="2" Width="300" Text="Test"></TextBox>-->
 
         <!-- Events -->
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="50" ></RowDefinition>
             <RowDefinition Height="50" ></RowDefinition>
             <RowDefinition Height="50" ></RowDefinition>
@@ -44,11 +44,51 @@
             <ColumnDefinition Width="200"></ColumnDefinition>
             <ColumnDefinition Width="200"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='2' Grid.Row="0" Margin="8"                     >Click Me!</Button>
-        <TextBlock x:ConnectionId='3' Name="MyText" Grid.Row="1" Margin="8"></TextBlock>
+        <Button Grid.Row="0" Margin="8" Click="Button_Click">Click Me!</Button>
+        <TextBlock Name="MyText" Grid.Row="1" Margin="8"></TextBlock>
 
-        <TextBox x:ConnectionId='4' Name="InputText" Grid.Row="2" Margin="8"                                  ></TextBox>
-        <TextBlock x:ConnectionId='5' Name="MyText1" Grid.Row="3" Margin="8"></TextBlock>
+        <TextBox Name="InputText" Grid.Row="2" Margin="8" TextChanged="TextBox_TextChanged"></TextBox>
+        <TextBlock Name="MyText1" Grid.Row="3" Margin="8"></TextBlock>-->
+
+
+        <!-- Complex layout -->
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Background="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Center" Margin="0,40,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Rectangle Grid.RowSpan="3" Fill="CornflowerBlue" Width="150" Height="150" Margin="20" ></Rectangle>
+                <TextBlock Margin="0,40,0,0" Grid.Row="0" Grid.Column="1" FontFamily="Sans" FontSize="36" FontWeight="Bold">Jwan</TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" FontFamily="Sans" FontSize="24" Foreground="Gray" >Local Account</TextBlock>
+                <TextBlock Margin="0,0,0,40" Grid.Row="2" Grid.Column="1" FontFamily="Sans" FontSize="24" Foreground="Blue" >Sign In</TextBlock>
+            </Grid>
+        </Grid>-->
+
+        <!--Dialog windows -->
+        <!--<Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>-->
+
+        <!--File picker -->
+        <!--<Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>-->
+
+        <!--Open a file -->
+        <Button x:ConnectionId='2' Name="MyButton" Height="50" Width="100"                        >Click me!</Button>
+        <TextBlock x:ConnectionId='3' Name="Mytext">Jwan</TextBlock>
+        
 
     </Grid>
 </Page>
