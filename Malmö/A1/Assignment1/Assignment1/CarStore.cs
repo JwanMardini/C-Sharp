@@ -13,6 +13,7 @@ namespace Assignment1
         private double carPrice;
         private int carMileage;
         private string carColor;
+        private int carId;
         private DateTime carDatePurchased;
 
         public void ReadCarInfo()
@@ -38,6 +39,11 @@ namespace Assignment1
             Console.Write("What is the car date purchased (mm/dd/yyyy)? ");
             string datePurchasedInput = Console.ReadLine();
             this.carDatePurchased = DateTime.Parse(datePurchasedInput);
+
+
+            // Random carId
+            Random random = new Random();
+            this.carId = random.Next(1, 9999);
         }
 
 
@@ -47,6 +53,7 @@ namespace Assignment1
             Console.WriteLine($"Model: {this.carModel} Year: {this.carYear}");
             Console.WriteLine($"Price: {this.carPrice} Mileage: {this.carMileage}");
             Console.WriteLine($"Color: {this.carColor} Date Purchased: {this.carDatePurchased.ToString("yyyy-MM-dd")}");
+            Console.WriteLine($"Car Id: {this.carId}");
             Console.WriteLine("++++++++++++++++++++++++++++");
 
         }

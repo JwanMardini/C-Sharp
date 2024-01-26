@@ -21,7 +21,7 @@ namespace Assignment1
 
         public void ReadRealaseDate()
         {
-            Console.WriteLine($"When was {this.albumName} released (dd/mm/yyyy)?");
+            Console.WriteLine($"When was {this.albumName} released (mm/dd/yyyy)?");
             string input = Console.ReadLine();
             this.releaseDate = DateTime.Parse(input);
         }
