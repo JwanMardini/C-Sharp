@@ -8,14 +8,15 @@ namespace Assignment1
 {
     internal class CarStore
     {
-        private string carModel;
-        private int carYear;
-        private double carPrice;
-        private int carMileage;
-        private string carColor;
-        private int carId;
-        private DateTime carDatePurchased;
+        private string carModel; // Stores the model of the car
+        private int carYear; // Stores the year of the car
+        private double carPrice; // Stores the price of the car
+        private int carMileage; // Stores the mileage of the car
+        private string carColor; // Stores the color of the car
+        private int carId; // Stores the unique identifier of the car
+        private DateTime carDatePurchased; // Stores the purchase date of the car
 
+        // Method to read input and populate car information
         public void ReadCarInfo()
         {
             Console.Write("What is the car model? ");
@@ -40,13 +41,12 @@ namespace Assignment1
             string datePurchasedInput = Console.ReadLine();
             this.carDatePurchased = DateTime.Parse(datePurchasedInput);
 
-
-            // Random carId
+            // Generate a random carId
             Random random = new Random();
             this.carId = random.Next(1, 9999);
         }
 
-
+        // Method to display car information
         public void DisplayCarInfo()
         {
             Console.WriteLine("++++++++++++++++++++++++++++");
@@ -55,21 +55,18 @@ namespace Assignment1
             Console.WriteLine($"Color: {this.carColor} Date Purchased: {this.carDatePurchased.ToString("yyyy-MM-dd")}");
             Console.WriteLine($"Car Id: {this.carId}");
             Console.WriteLine("++++++++++++++++++++++++++++");
-
         }
 
+        // Method to start the interaction with the car store
         public void Start()
         {
             Console.WriteLine();
             Console.WriteLine("Greetings from the car store class");
             Console.WriteLine();
 
-            ReadCarInfo();
-            DisplayCarInfo();
+            ReadCarInfo(); // Read car information from user
+            DisplayCarInfo(); // Display the entered car information
             Console.WriteLine();
         }
     }
-
-
-
 }

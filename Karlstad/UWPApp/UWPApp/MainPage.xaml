@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="1469*"/>
+        </Grid.ColumnDefinitions>
         <!-- Grid -->
         <!--<Grid.RowDefinitions>
             <RowDefinition Height="*" ></RowDefinition>
@@ -22,7 +26,7 @@
         <Rectangle Grid.Row="0" Fill="CornflowerBlue" RenderTransformOrigin="0.511,0.517" Margin="0,0,0,10"/>
         <Rectangle Grid.Row="1" Grid.Column="1"  Fill="LightGoldenrodYellow" RenderTransformOrigin="0.511,0.517"></Rectangle>
         <Rectangle Grid.Row="2"  Fill="OrangeRed" RenderTransformOrigin="0.511,0.517"></Rectangle>-->
-                
+
         <!-- Controllers -->
         <!--<Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -86,9 +90,25 @@
         <!--<Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>-->
 
         <!--Open a file -->
-        <Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>
-        <TextBlock Name="Mytext">Jwan</TextBlock>
-        
+        <!--<Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>
+        <TextBlock Name="Mytext">Jwan</TextBlock>-->
+
+        <!--Command bar -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <CommandBar HorizontalAlignment="Left" OverflowButtonVisibility="Collapsed" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <AppBarButton Name="OpenFileButton" Icon="OpenFile" Label="Open File" Click="OpenFileClick"></AppBarButton>
+            <AppBarButton Name="SaveFileButton"  Icon="Save" Label="Save File" Click="OpenFileClick"></AppBarButton>
+            <AppBarButton Name="NewFileButton" Icon="NewWindow" Label="New File" Click="NewFileButton_Click"></AppBarButton>
+            <CommandBar.Content Grid.Row="2" >
+                Hej Hej
+            </CommandBar.Content>
+        </CommandBar>
+        <TextBlock Name="MyText" Grid.Row="1" Margin="8,8,8,8" Grid.ColumnSpan="2">Hello</TextBlock>
 
     </Grid>
 </Page>

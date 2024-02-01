@@ -5,7 +5,7 @@
         private static string classUsed;
         static void Main(string[] args)
         {
-            SetupConsoleWindow();
+            SetupConsoleWindow(); // Set up console window appearance
             classUsed = "Pet";
             Console.Title = classUsed;
             Pet pet = new Pet();

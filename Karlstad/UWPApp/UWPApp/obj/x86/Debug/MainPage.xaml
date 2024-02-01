@@ -86,9 +86,20 @@
         <!--<Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>-->
 
         <!--Open a file -->
-        <Button x:ConnectionId='2' Name="MyButton" Height="50" Width="100"                        >Click me!</Button>
-        <TextBlock x:ConnectionId='3' Name="Mytext">Jwan</TextBlock>
-        
+        <!--<Button Name="MyButton" Height="50" Width="100" Click="MyButton_Click" >Click me!</Button>
+        <TextBlock Name="Mytext">Jwan</TextBlock>-->
+
+        <!--Command bar -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <CommandBar Grid.Row="0" HorizontalAlignment="Left" OverflowButtonVisibility="Collapsed">
+            <AppBarButton x:ConnectionId='3' Name="OpenFileButton" Icon="OpenFile" Label="Open File"                      ></AppBarButton>
+            <AppBarButton x:ConnectionId='4' Name="SaveFileButton"  Icon="Save" Label="Save File"                      ></AppBarButton>
+        </CommandBar>
+        <TextBlock x:ConnectionId='2' Name="MyText" Grid.Row="1" Margin="8">Hello</TextBlock>
 
     </Grid>
 </Page>

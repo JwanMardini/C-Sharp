@@ -31,21 +31,44 @@ namespace UWPApp
             this.InitializeComponent(); // It creats all components
         }
 
-        private async void MyButton_Click(object sender, RoutedEventArgs e)
+        private void OpenFileClick(object sender, RoutedEventArgs e)
         {
-            var fileOpen = new FileOpenPicker();
-            fileOpen.FileTypeFilter.Add(".txt");
-            var result = await fileOpen.PickSingleFileAsync();
-
-            if (result != null)
+            var buttonm = (AppBarButton)sender;
+            if(sender == OpenFileButton)
             {
-                var text = await Windows.Storage.FileIO.ReadTextAsync(result);
-                Mytext.Text = text;
-                
+                MyText.Text = "File Opened";
+
+            }else if(sender == SaveFileButton)
+            {
+                MyText.Text = "File Saved";
+
             }
 
+        }
+
+        private void NewFileButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyText.Text = "New File";
 
         }
+
+
+
+        //private async void MyButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    var fileOpen = new FileOpenPicker();
+        //    fileOpen.FileTypeFilter.Add(".txt");
+        //    var result = await fileOpen.PickSingleFileAsync();
+
+        //    if (result != null)
+        //    {
+        //        var text = await Windows.Storage.FileIO.ReadTextAsync(result);
+        //        Mytext.Text = text;
+
+        //    }
+
+
+        //}
 
 
         // File picker
