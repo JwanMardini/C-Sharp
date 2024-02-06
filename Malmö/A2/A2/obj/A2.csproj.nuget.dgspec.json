@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Malmö\\A2\\A2\\A2.csproj": {}
+    "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Malmö\\A2\\A2\\A2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Malmö\\A2\\A2\\A2.csproj": {
+    "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Malmö\\A2\\A2\\A2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Malmö\\A2\\A2\\A2.csproj",
+        "projectUniqueName": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Malmö\\A2\\A2\\A2.csproj",
         "projectName": "A2",
-        "projectPath": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Malmö\\A2\\A2\\A2.csproj",
-        "packagesPath": "C:\\Users\\jwan9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-\\Malmö\\A2\\A2\\obj\\",
+        "projectPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Malmö\\A2\\A2\\A2.csproj",
+        "packagesPath": "C:\\Users\\jwanl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-\\Malmö\\A2\\A2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jwan9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jwanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

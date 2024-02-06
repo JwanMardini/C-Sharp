@@ -9,6 +9,10 @@ namespace A2
     internal class StringFunctions
     {
         private static bool keepGoing = true; // Used to control the while loop in Start()
+
+        /// <summary>
+        /// it will calculate the length of the string and print it out
+        /// </summary>
         private static void StringLength()
         {
             Console.WriteLine();
@@ -24,6 +28,9 @@ namespace A2
 
         }
 
+        /// <summary>
+        /// Predicts the day of the week based on the number input
+        /// </summary>
         private static void PredictMyDay()
         {
             string input = Console.ReadLine();
@@ -59,6 +66,9 @@ namespace A2
 
         }
 
+        /// <summary>
+        /// Asks the user if they want to run the program again
+        /// </summary>
         private static void RunAgain()
         {
             Console.WriteLine();
@@ -80,6 +90,9 @@ namespace A2
         }
         
 
+        /// <summary>
+        /// Starts the program
+        /// </summary>
         public void Start()
         {
             while (keepGoing)

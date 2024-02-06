@@ -2,6 +2,10 @@
 {
     internal class Program
     {
+        /// <summary>
+        /// it will start the program
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Console.Title = "Temperature Converter";
@@ -22,6 +26,10 @@
 
         }
 
+        /// <summary>
+        /// it will clear the console and set the title to the next part
+        /// </summary>
+        /// <param name="title"></param>
         private static void ContinueToNextPart(string title)
         {
             Console.WriteLine("\n PRESS ENTER TO CONTINUE TO THE NEXT PART");

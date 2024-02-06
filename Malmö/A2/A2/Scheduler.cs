@@ -8,7 +8,9 @@ namespace A2
 {
     internal class Scheduler
     {
-
+        /// <summary>
+        /// will show the menu and start the scheduler
+        /// </summary>
         public void Start()
         {
             ShowHeader();
@@ -36,6 +38,9 @@ namespace A2
             
         }
 
+        /// <summary>
+        /// it will show the weekends to work
+        /// </summary>
         private static void ShowWeekends()
         {
             int counter = 0;
@@ -52,6 +57,10 @@ namespace A2
 
         }
 
+
+        /// <summary>
+        /// it will show the nights to work
+        /// </summary>
         private static void ShowNights()
         {
             int counter = 0;
@@ -70,6 +79,9 @@ namespace A2
         }
 
 
+        /// <summary>
+        /// it will show the header
+        /// </summary>
         private static void ShowHeader()
         {
             Console.WriteLine("----------------------------------------------------");
@@ -78,6 +90,9 @@ namespace A2
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// it will show the menu
+        /// </summary>
         private static void ShowMenu()
         {
             Console.WriteLine("1 Show a list of the weekends to work.");
