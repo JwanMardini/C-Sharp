@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace A3
 {
-    internal enum UnitType
+    internal enum Gender
     {
-        Metric,
-        Imperial
+        Female,
+        Male
+
     }
 }

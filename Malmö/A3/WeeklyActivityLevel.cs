@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace A3
 {
-    internal enum UnitType
+    internal enum WeeklyActivityLevel
     {
-        Metric,
-        Imperial
+        Sedentary,
+        LightlyActive,
+        ModeratelyActive,
+        VeryActive,
+        ExtraActive
     }
 }

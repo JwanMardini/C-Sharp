@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BMICalculator
+namespace A3
 {
     public partial class MainForm : Form
     {
@@ -80,7 +80,11 @@ namespace BMICalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ReadInputBMI();
+            bool inputs = ReadInputBMI();
+            if (!inputs)
+            {
+                return;
+            }
 
             double bmi = bmiCalculator.CalculateBMI();
             txtBMI.Text = bmi.ToString("0.00");
@@ -90,14 +94,24 @@ namespace BMICalculator
 
             string normalWeight = bmiCalculator.DetermineNormalWeightRange();
             norText.Text = normalWeight;
+
         }
 
-        private void ReadInputBMI()
+        private bool ReadInputBMI()
         {
             ReadName();
-            ReadHight();
-            ReadWeight();
+            bool readHeight = ReadHight();
+            if (!readHeight)
+            {
+                return false;
+            }
+            bool readWeight = ReadWeight();
+            if (!readWeight)
+            {
+                return false;
+            }
             ReadUnitType();
+            return true;
         }
 
         private void ReadUnitType()
@@ -113,13 +127,13 @@ namespace BMICalculator
         }
 
 
-        private void ReadHight()
+        private bool ReadHight()
         {
             double height = ReadDouble(txtheight.Text, out bool success);
             if (!success)
             {
                 MessageBox.Show("Invalid height value");
-                return;
+                return false;
             }
             if (rbtnimperial.Checked)
             {
@@ -127,22 +141,24 @@ namespace BMICalculator
                 if (!success)
                 {
                     MessageBox.Show("Invalid height value");
-                    return;
+                    return false;
                 }
                 height = height * 12 + height2;
             }
             bmiCalculator.Height = height;
+            return true;
         }
 
-        private void ReadWeight()
+        private bool ReadWeight()
         {
             double weight = ReadDouble(txtweight.Text, out bool success);
             if (!success)
             {
                 MessageBox.Show("Invalid weight value");
-                return;
+                return false;
             }
             bmiCalculator.Weight = weight;
+            return true;
         }
 
 
@@ -184,7 +200,11 @@ namespace BMICalculator
 
         private void calculate_saving_Click(object sender, EventArgs e)
         {
-            ReadInputSavings();
+            bool inputs = InputSavings();
+            if (!inputs)
+            {
+                return;
+            }
 
             (double amountPaid, double amountEarned, double finalBalance, double totalFees) = savingsCalculator.CalculateFutureValue();
             amountpaid.Text = amountPaid.ToString("0.00");
@@ -194,46 +214,47 @@ namespace BMICalculator
 
         }
 
-        private void ReadInputSavings()
+        private bool InputSavings()
         {
             double initDeposit = ReadDouble(initDep.Text, out bool success);
             if (!success)
             {
                 MessageBox.Show("Invalid initial deposit value");
-                return;
+                return false;
             }
 
             double monthlySaving = ReadInt(Months.Text, out success);
             if (!success)
             {
                 MessageBox.Show("Invalid monthly saving value");
-                return;
+                return false;
             }
 
             int years = ReadInt(period.Text, out success);
             if (!success)
             {
                 MessageBox.Show("Invalid period value");
-                return;
+                return false;
             }
 
             double annualInterestRate = ReadDouble(growth.Text, out success);
             if (!success)
             {
                 MessageBox.Show("Invalid annual interest rate value");
-                return;
+                return false;
             }
 
             double feesRate = ReadDouble(fees.Text, out success);
             if (!success)
             {
                 MessageBox.Show("Invalid fees rate value");
-                return;
+                return false;
             }
 
             savingsCalculator = new SavingsCalculator(initDeposit, monthlySaving, annualInterestRate, feesRate, years);
-
+            return true;
         }
+
     }
 
 }
