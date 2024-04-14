@@ -5,15 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A4"
         mc:Ignorable="d" Height="450" Width="497" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-    <Grid Margin="10,10,19,0">
+    <Grid>
         <Label Content="Number of ingredients" HorizontalAlignment="Left" Height="29" Margin="22,10,0,0" VerticalAlignment="Top" Width="153"/>
-        <GroupBox HorizontalAlignment="Left" Height="314" Header="Ingredint" Margin="22,44,0,0" VerticalAlignment="Top" Width="436"></GroupBox>
-        <TextBox x:Name="ingredientTxt" VerticalAlignment="Top" Height="25" TextWrapping="Wrap" Margin="33,76,114,0" />
-        <Button Content="Add"  Margin="369,76,22,323" />
-        <Button Content="Edit"  Margin="369,121,22,278"  />
-        <Button Content="Delete"  Margin="369,167,22,233" />
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="211" Margin="33,0,0,0" VerticalAlignment="Center" Width="321" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Button Content="Cancel"  Margin="234,363,141,36"  Width="75" />
-        <Button Content="OK"  Margin="118,363,256,36"  Width="75" RenderTransformOrigin="0.214,-0.696" />
+
+        <GroupBox HorizontalAlignment="Center" Height="314" Header="Ingredient" Margin="0,44,0,0" VerticalAlignment="Top" Width="454">
+            <Grid>
+                <TextBox x:Name="ingredientTxt" VerticalAlignment="Top" Height="25" TextWrapping="Wrap" Margin="10,10,10,50" />
+                <Button Content="Add" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10"/>
+                <Button Content="Edit" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,120,10"/>
+                <Button Content="Delete" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,230,10"/>
+                <ListBox x:Name="listBox" Height="211" Margin="10,10,10,10" />
+            </Grid>
+        </GroupBox>
+
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="273,0,0,10" Width="75"/>
+        <Button Content="OK" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,90,10" Width="75"/>
     </Grid>
 </Window>
