@@ -1,0 +1,17 @@
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\bin\Debug\A4.exe.config
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\bin\Debug\A4.exe
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\bin\Debug\A4.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.csproj.AssemblyReference.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\MainWindow.g.cs
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\App.g.cs
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4_MarkupCompile.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4_MarkupCompile.lref
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\MainWindow.baml
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.g.resources
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.Properties.Resources.resources
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.csproj.GenerateResource.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.csproj.CoreCompileInputs.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.exe
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\A4.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\FormIngredients.g.cs
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A4\obj\Debug\FormIngredients.baml
