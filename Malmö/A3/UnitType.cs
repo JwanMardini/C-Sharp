@@ -1,14 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace A3
 {
+    /// <summary>
+    /// Represents the unit types used for calculations.
+    /// </summary>
     internal enum UnitType
     {
+        /// <summary>
+        /// Metric unit type.
+        /// </summary>
         Metric,
+
+        /// <summary>
+        /// Imperial unit type.
+        /// </summary>
         Imperial
     }
 }

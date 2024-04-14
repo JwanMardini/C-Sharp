@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace A3
 {
+    /// <summary>
+    /// Represents a savings calculator that calculates future value based on initial deposit, monthly savings, growth rate, and fees rate.
+    /// </summary>
     internal class SavingsCalculator
     {
         private readonly double initialDeposit;
@@ -17,6 +16,14 @@ namespace A3
         private readonly double monthlyGrowthRate;
         private readonly double monthlyFeesRate;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SavingsCalculator"/> class.
+        /// </summary>
+        /// <param name="initialDeposit">The initial deposit amount.</param>
+        /// <param name="monthlySavings">The monthly savings amount.</param>
+        /// <param name="growthRate">The annual growth rate in percentage (e.g., 5 for 5%).</param>
+        /// <param name="feesRate">The annual fees rate in percentage (e.g., 1 for 1%).</param>
+        /// <param name="years">The number of years to calculate.</param>
         public SavingsCalculator(double initialDeposit, double monthlySavings, double growthRate, double feesRate, int years)
         {
             this.initialDeposit = initialDeposit;
@@ -29,6 +36,10 @@ namespace A3
             this.monthlyFeesRate = this.feesRate / 12.0;
         }
 
+        /// <summary>
+        /// Calculates the future value of savings including amount paid, amount earned, final balance, and total fees.
+        /// </summary>
+        /// <returns>A tuple containing the amount paid, amount earned, final balance, and total fees.</returns>
         public (double AmountPaid, double AmountEarned, double FinalBalance, double TotalFees) CalculateFutureValue()
         {
             double balance = initialDeposit;
@@ -50,6 +61,5 @@ namespace A3
 
             return (amountPaid, amountEarned, finalBalance, totalFees);
         }
-
     }
 }

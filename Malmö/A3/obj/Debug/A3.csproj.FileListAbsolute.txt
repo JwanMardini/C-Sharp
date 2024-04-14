@@ -18,3 +18,13 @@ C:\Users\jwanl\OneDrive\Desktop\C-Sharp\Malmö\A3\obj\Debug\A3.csproj.GenerateRe
 C:\Users\jwanl\OneDrive\Desktop\C-Sharp\Malmö\A3\obj\Debug\A3.csproj.CoreCompileInputs.cache
 C:\Users\jwanl\OneDrive\Desktop\C-Sharp\Malmö\A3\obj\Debug\BMICalculator.exe
 C:\Users\jwanl\OneDrive\Desktop\C-Sharp\Malmö\A3\obj\Debug\BMICalculator.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\bin\Debug\BMICalculator.exe.config
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\bin\Debug\BMICalculator.exe
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\bin\Debug\BMICalculator.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\A3.csproj.AssemblyReference.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\A3.MainForm.resources
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\BMICalculator.Properties.Resources.resources
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\A3.csproj.GenerateResource.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\A3.csproj.CoreCompileInputs.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\BMICalculator.exe
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\Malmö\A3\obj\Debug\BMICalculator.pdb

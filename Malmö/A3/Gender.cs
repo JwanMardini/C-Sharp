@@ -1,15 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace A3
 {
+    /// <summary>
+    /// Represents the gender types used in calculations.
+    /// </summary>
     internal enum Gender
     {
+        /// <summary>
+        /// Female gender.
+        /// </summary>
         Female,
-        Male
 
+        /// <summary>
+        /// Male gender.
+        /// </summary>
+        Male
     }
 }
