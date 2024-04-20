@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace A4
 {
-    internal enum FoodCategory
+    public enum FoodCategory
     {
+        Meats,
+        Pasta,
+        Pizza,
+        Fish,
+        Seafood,
+        Soups,
+        Stew,
+        Vegan,
+        Vegetarian,
+        Vegeterian_Dairy_Egg,
+        Other
     }
 }

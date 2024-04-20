@@ -59,7 +59,7 @@
       <DependentUpon>FormIngredients.xaml</DependentUpon>
     </Compile>
     <Compile Include="Recipe.cs" />
-    <Compile Include="ReipeManager.cs" />
+    <Compile Include="RecipeManager.cs" />
     <Page Include="FormIngredients.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

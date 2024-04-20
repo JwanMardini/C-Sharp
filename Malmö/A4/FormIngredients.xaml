@@ -6,19 +6,19 @@
         xmlns:local="clr-namespace:A4"
         mc:Ignorable="d" Height="450" Width="497" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Number of ingredients" HorizontalAlignment="Left" Height="29" Margin="22,10,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label x:Name="numOfIng" Content="Number of ingredients" HorizontalAlignment="Left" Height="29" Margin="22,10,0,0" VerticalAlignment="Top" Width="153"/>
 
         <GroupBox HorizontalAlignment="Center" Height="314" Header="Ingredient" Margin="0,44,0,0" VerticalAlignment="Top" Width="454">
             <Grid>
                 <TextBox x:Name="ingredientTxt" VerticalAlignment="Top" Height="25" TextWrapping="Wrap" Margin="10,10,10,50" />
-                <Button Content="Add" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10"/>
-                <Button Content="Edit" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,120,10"/>
-                <Button Content="Delete" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,230,10"/>
+                <Button Content="Add" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="btnAdd_Click_1"/>
+                <Button Content="Edit" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,120,10" Click="btnEdit_Click_1"/>
+                <Button Content="Delete" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,230,10" Click="btnDel_Click_1"/>
                 <ListBox x:Name="listBox" Height="211" Margin="10,10,10,10" />
             </Grid>
         </GroupBox>
 
-        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="273,0,0,10" Width="75"/>
-        <Button Content="OK" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,90,10" Width="75"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="273,0,0,10" Width="75" Click="btnCancel_Click_1"/>
+        <Button Content="OK" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,90,10" Width="75" Click="btnOk_Click_1"/>
     </Grid>
 </Window>
