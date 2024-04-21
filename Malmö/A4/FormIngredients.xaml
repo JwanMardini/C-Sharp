@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:A4"
         mc:Ignorable="d" Height="450" Width="497" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label x:Name="numOfIng" Content="Number of ingredients" HorizontalAlignment="Left" Height="29" Margin="22,10,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Number of ingredients:" HorizontalAlignment="Left" Height="29" Margin="22,10,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label x:Name="numOfIng" Content="0" HorizontalAlignment="Left" Height="29" Margin="200,10,0,0" VerticalAlignment="Top" Width="153"/>
 
         <GroupBox HorizontalAlignment="Center" Height="314" Header="Ingredient" Margin="0,44,0,0" VerticalAlignment="Top" Width="454">
             <Grid>

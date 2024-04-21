@@ -14,17 +14,17 @@
         <ComboBox x:Name="categoryComboBox" HorizontalAlignment="Left" Height="25" Margin="93,74,0,0" VerticalAlignment="Top" Width="145"/>
         <Button x:Name="addIngerBtn" Content="Add Ingredients" HorizontalAlignment="Left" Height="25" Margin="266,74,0,0" VerticalAlignment="Top" Width="122" Click="addIngerBtn_Click"/>
         <Border HorizontalAlignment="Left" Height="158" Margin="29,104,0,0" VerticalAlignment="Top" Width="359" BorderBrush="Black" BorderThickness="1">
-            <TextBlock x:Name="textInstructions" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="351"/>
+            <TextBox x:Name="textInstructions" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="351"/>
         </Border>
         <Button x:Name="AddRecipeBtn" Content="Add Recipe" HorizontalAlignment="Left" Height="25" Margin="29,282,0,0" VerticalAlignment="Top" Width="359" Click="btnAddRec_Click"/>
         <Label Content="Name" HorizontalAlignment="Left" Height="29" Margin="412,12,0,0" VerticalAlignment="Top" Width="82"/>
         <Label Content="Category" HorizontalAlignment="Left" Height="30" Margin="647,13,0,0" VerticalAlignment="Top" Width="82"/>
         <Label Content="No. of ingredients" HorizontalAlignment="Left" Height="29" Margin="797,13,0,0" VerticalAlignment="Top" Width="112"/>
         <ListBox x:Name="listRecipes" HorizontalAlignment="Left" Height="216" Margin="412,46,0,0" VerticalAlignment="Top" Width="497" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Button Content="Edit-Begin" HorizontalAlignment="Center" Height="25" Margin="0,269,0,0" VerticalAlignment="Top" Width="102"/>
-        <Button Content="Edit-Finish" HorizontalAlignment="Left" Height="25" Margin="688,269,0,0" VerticalAlignment="Top" Width="102"/>
-        <Button Content="Delet" HorizontalAlignment="Left" Height="25" Margin="807,269,0,0" VerticalAlignment="Top" Width="102"/>
-        <Button Content="Clear Selection" HorizontalAlignment="Left" Height="25" Margin="536,269,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Edit-Begin" HorizontalAlignment="Center" Height="25" Margin="0,269,0,0" VerticalAlignment="Top" Width="102" Click="btnEditBegin_Click"/>
+        <Button Content="Edit-Finish" HorizontalAlignment="Left" Height="25" Margin="688,269,0,0" VerticalAlignment="Top" Width="102" Click="btnEditFinish_Click"/>
+        <Button Content="Delet" HorizontalAlignment="Left" Height="25" Margin="807,269,0,0" VerticalAlignment="Top" Width="102" Click="btnDel_Click"/>
+        <Button Content="Clear Selection" HorizontalAlignment="Left" Height="25" Margin="536,269,0,0" VerticalAlignment="Top" Width="102" Click="btnClear_Click"/>
 
 
     </Grid>

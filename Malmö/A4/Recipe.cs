@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace A4
 {
+    /// <summary>
+    /// Represents a recipe with a category, description, ingredients, and name.
+    /// </summary>
     public class Recipe
     {
         private FoodCategory category;
@@ -15,46 +13,65 @@ namespace A4
         private string name;
         private int maxNumIngredients;
 
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Recipe"/> class with a maximum number of ingredients.
+        /// </summary>
+        /// <param name="maxNumIngredients">The maximum number of ingredients the recipe can have.</param>
         public Recipe(int maxNumIngredients)
         {
             this.maxNumIngredients = maxNumIngredients;
             DefaultValues();
         }
 
-        // properties
-
+        /// <summary>
+        /// Gets or sets the category of the recipe.
+        /// </summary>
         public FoodCategory Category
         {
             get { return category; }
             set { category = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the description of the recipe.
+        /// </summary>
         public string Description
         {
             get { return description; }
             set { description = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the array of ingredients for the recipe.
+        /// </summary>
         public string[] Ingredients
         {
             get { return ingredients; }
             set { ingredients = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the name of the recipe.
+        /// </summary>
         public string Name
         {
             get { return name; }
             set { name = value; }
         }
 
+        /// <summary>
+        /// Gets the maximum number of ingredients allowed for the recipe.
+        /// </summary>
         public int MaxNumIngredients
         {
             get { return maxNumIngredients; }
         }
 
-        // methods
-
+        /// <summary>
+        /// Adds an ingredient to the recipe.
+        /// </summary>
+        /// <param name="input">The ingredient to add.</param>
+        /// <returns>True if the ingredient was added successfully, otherwise false.</returns>
         public bool AddIngredient(string input)
         {
             int index = FindVacantPosition();
@@ -66,6 +83,12 @@ namespace A4
             return false;
         }
 
+        /// <summary>
+        /// Changes an ingredient at a specific index.
+        /// </summary>
+        /// <param name="index">The index of the ingredient to change.</param>
+        /// <param name="value">The new value of the ingredient.</param>
+        /// <returns>True if the ingredient was changed successfully, otherwise false.</returns>
         public bool ChangeIngredientAt(int index, string value)
         {
             if (CheckIndex(index))
@@ -76,11 +99,20 @@ namespace A4
             return false;
         }
 
+        /// <summary>
+        /// Checks if an index is valid for the ingredients array.
+        /// </summary>
+        /// <param name="index">The index to check.</param>
+        /// <returns>True if the index is valid, otherwise false.</returns>
         private bool CheckIndex(int index)
         {
             return index >= 0 && index < ingredients.Length;
         }
-        
+
+        /// <summary>
+        /// Calculates the current number of ingredients in the recipe.
+        /// </summary>
+        /// <returns>The number of ingredients.</returns>
         public int CurrentNumberOfIngredients()
         {
             int count = 0;
@@ -94,6 +126,9 @@ namespace A4
             return count;
         }
 
+        /// <summary>
+        /// Resets the recipe to default values.
+        /// </summary>
         public void DefaultValues()
         {
             category = FoodCategory.Other;
@@ -102,6 +137,10 @@ namespace A4
             name = "";
         }
 
+        /// <summary>
+        /// Deletes an ingredient at a specific index.
+        /// </summary>
+        /// <param name="index">The index of the ingredient to delete.</param>
         public void DeletingIngredientAt(int index)
         {
             if (CheckIndex(index))
@@ -110,6 +149,10 @@ namespace A4
             }
         }
 
+        /// <summary>
+        /// Finds a vacant position in the ingredients array.
+        /// </summary>
+        /// <returns>The index of the vacant position or -1 if no vacant position is found.</returns>
         private int FindVacantPosition()
         {
             for (int i = 0; i < ingredients.Length; i++)
@@ -122,6 +165,10 @@ namespace A4
             return -1;
         }
 
+        /// <summary>
+        /// Gets a string representation of the ingredients in the recipe.
+        /// </summary>
+        /// <returns>A string containing the ingredients.</returns>
         public string GetIngredientsString()
         {
             string result = "";
@@ -133,9 +180,13 @@ namespace A4
                 }
             }
             return result;
-
         }
 
+        /// <summary>
+        /// Gets the ingredient at a specific index as a string.
+        /// </summary>
+        /// <param name="index">The index of the ingredient.</param>
+        /// <returns>The ingredient at the specified index or null if the index is invalid.</returns>
         public string GetIngredientsStringAt(int index)
         {
             if (CheckIndex(index))
@@ -144,13 +195,22 @@ namespace A4
             }
             return null;
         }
-        // toString
+
+        /// <summary>
+        /// Returns a string representation of the recipe.
+        /// </summary>
+        /// <returns>A formatted string containing the recipe details.</returns>
         public override string ToString()
         {
-            return "Name: " + name + "\n" +
-                   "Category: " + category + "\n" +
-                   "Description: " + description + "\n" +
-                   "Ingredients: " + GetIngredientsString();
+            const int namePad = 20;
+            const int categoryPad = 48;
+            const int ingredientCountPad = 60;
+
+            string nameColumn = Name.PadRight(namePad);
+            string categoryColumn = Category.ToString().PadLeft(categoryPad);
+            string ingredientCountColumn = CurrentNumberOfIngredients().ToString().PadLeft(ingredientCountPad);
+
+            return $"{nameColumn}{categoryColumn}{ingredientCountColumn}";
         }
     }
 }

@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace A4
 {
@@ -21,19 +11,25 @@ namespace A4
     {
         private Recipe currRecipe;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FormIngredients"/> class.
+        /// </summary>
+        /// <param name="recipe">The recipe to edit.</param>
         public FormIngredients(Recipe recipe)
         {
             InitializeComponent();
             currRecipe = recipe;
             UpdateIngredientList();
-        
         }
 
+        /// <summary>
+        /// Gets the current recipe being edited.
+        /// </summary>
+        /// <returns>The current recipe.</returns>
         public Recipe GetRecipe()
         {
             return currRecipe;
         }
-
 
         /// <summary>
         /// Handles the click event of the "Add" button.
@@ -61,7 +57,7 @@ namespace A4
         }
 
         /// <summary>
-        /// Updates the list of ingredients.
+        /// Updates the list of ingredients displayed in the UI.
         /// </summary>
         private void UpdateIngredientList()
         {
@@ -73,7 +69,7 @@ namespace A4
                     listBox.Items.Add(ingredient);
                 }
             }
-            numOfIng.Content = currRecipe.Ingredients.ToString();
+            numOfIng.Content = currRecipe.CurrentNumberOfIngredients().ToString();
         }
 
         /// <summary>
@@ -128,6 +124,5 @@ namespace A4
         {
             this.Close();
         }
-
     }
 }
