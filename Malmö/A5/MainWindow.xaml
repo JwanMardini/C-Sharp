@@ -1,0 +1,21 @@
+﻿<Window x:Class="A5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <Grid>
+        <Label Content="ID" Margin="20,33,725,372"/>
+        <Label Content="Name(Surname, first name)" Margin="100,33,495,372"/>
+        <Label Content="Office Phone" Margin="320,33,345,372"/>
+        <Label Content="Office E-Mail" Margin="500,30,395,375"/>
+        <Label Content="Contact Detail" Margin="780,33,34,372"/>
+        <ListBox HorizontalAlignment="Left" Height="318" Margin="10,0,0,0" VerticalAlignment="Center" Width="629"/>
+        <Label HorizontalAlignment="Left" Margin="655,0,0,0" VerticalAlignment="Center" Height="318" Width="324" Background="#FFD0D0D0"/>
+        <Button Content="Add" HorizontalAlignment="Left" Height="24" Margin="10,390,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Height="24" Margin="274,390,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Height="24" Margin="539,385,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</Window>
