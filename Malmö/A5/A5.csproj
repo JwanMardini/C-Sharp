@@ -67,6 +67,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ContactFiles\Address.cs" />
+    <Compile Include="ContactFiles\Contact.cs" />
+    <Compile Include="ContactFiles\Countries.cs" />
+    <Compile Include="ContactFiles\Email.cs" />
+    <Compile Include="ContactFiles\Phone.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerManager.cs" />
     <Compile Include="FormWindow.xaml.cs">
       <DependentUpon>FormWindow.xaml</DependentUpon>
     </Compile>
