@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B738661-D1D5-4F4E-BA89-4AFDE4438B7A}|A6\\A6.csproj|c:\\users\\jwanl\\onedrive\\desktop\\c-sharp\\malm\u00F6\\a6\\a6\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B738661-D1D5-4F4E-BA89-4AFDE4438B7A}|A6\\A6.csproj|solutionrelative:a6\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B738661-D1D5-4F4E-BA89-4AFDE4438B7A}|A6\\A6.csproj|c:\\users\\jwanl\\onedrive\\desktop\\c-sharp\\malm\u00F6\\a6\\a6\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B738661-D1D5-4F4E-BA89-4AFDE4438B7A}|A6\\A6.csproj|solutionrelative:a6\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\A6\\Task.cs",
+              "RelativeDocumentMoniker": "A6\\Task.cs",
+              "ToolTip": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\A6\\Task.cs",
+              "RelativeToolTip": "A6\\Task.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAqwCsAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T10:13:36.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PriorityType.cs",
               "DocumentMoniker": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\A6\\PriorityType.cs",
               "RelativeDocumentMoniker": "A6\\PriorityType.cs",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\A6\\MainWindow.xaml",
               "RelativeDocumentMoniker": "A6\\MainWindow.xaml",
@@ -59,13 +76,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\A6\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "A6\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malm\u00F6\\A6\\A6\\MainWindow.xaml.cs",
               "RelativeToolTip": "A6\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA+wB4AAAAUAAAA",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAGUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T22:56:45.901Z",
               "EditorCaption": ""

@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Xceed.Wpf.Toolkit;
 
 namespace A6
 {
@@ -22,9 +23,11 @@ namespace A6
         {
             InitializeComponent();
             InitializeCompBox();
+            InitilizeApp();
             InitializeTimeLabel();
         }
 
+        // Initializetions
         private void InitializeCompBox()
         {
             // Add items to the ComboBox
@@ -57,22 +60,75 @@ namespace A6
             currentTimeLabel.Content = DateTime.Now.ToString("HH:mm:ss");
         }
 
+        private void InitilizeApp()
+        {
+            this.Title = "ToDo Reminder by Jwan";
+
+            toDoTxt.Text = " ";
+            toDoList.Items.Clear();
+        }
+
+        // Button handlers
+        private void addBtn_Click(object sender, RoutedEventArgs e)
+        {
+            CheckInputs();
+        }
+
+        private void CheckInputs()
+        {
+            // Check if the inputs are valid
+            if (toDoTxt.Text == " ")
+            {
+                System.Windows.MessageBox.Show("Please enter a description");
+                return;
+            }
+            if(priorityComboBox.SelectedIndex == -1)
+            {
+                System.Windows.MessageBox.Show("Please select a priority");
+                return;
+            }
+            if(!dateTimePicker.Value.HasValue)
+            {
+                System.Windows.MessageBox.Show("Please select a date and time");
+                return;
+
+            }
+
+            DateTime selectedDateTime = dateTimePicker.Value.Value;
+
+            // Add the task to the list
+            Task task = new Task((PriorityType)priorityComboBox.SelectedItem, selectedDateTime, toDoTxt.Text);
+            toDoList.Items.Add(task.ToString());
+            CLearInputs();
+        }
+
+        private void CLearInputs()
+        {
+            // Clear the inputs
+            toDoTxt.Text = " ";
+            priorityComboBox.SelectedIndex = 2;
+            dateTimePicker.Value = null;
+        }
+
+
+
+        // Main Menu handlers
         private void New_Click(object sender, RoutedEventArgs e)
         {
             // Handle New click
-            MessageBox.Show("New clicked");
+            System.Windows.MessageBox.Show("New clicked");
         }
 
         private void Open_Click(object sender, RoutedEventArgs e)
         {
             // Handle Open click
-            MessageBox.Show("Open clicked");
+            System.Windows.MessageBox.Show("Open clicked");
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             // Handle Save click
-            MessageBox.Show("Save clicked");
+            System.Windows.MessageBox.Show("Save clicked");
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -84,7 +140,8 @@ namespace A6
         private void About_Click(object sender, RoutedEventArgs e)
         {
             // Handle About click
-            MessageBox.Show("About this application");
+            System.Windows.MessageBox.Show("ToDo Reminder by Jwan");
         }
+
     }
 }
