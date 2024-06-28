@@ -117,23 +117,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jwanl\\.nuget\\packages\\": {},
+    "C:\\Users\\jwan9\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malmö\\A6\\A6\\A6.csproj",
+      "projectUniqueName": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-Sharp\\Malmö\\A6\\A6\\A6.csproj",
       "projectName": "A6",
-      "projectPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malmö\\A6\\A6\\A6.csproj",
-      "packagesPath": "C:\\Users\\jwanl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jwanl\\OneDrive\\Desktop\\C-Sharp\\Malmö\\A6\\A6\\obj\\",
+      "projectPath": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-Sharp\\Malmö\\A6\\A6\\A6.csproj",
+      "packagesPath": "C:\\Users\\jwan9\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jwan9\\OneDrive\\Skrivbord\\C-Sharp\\Malmö\\A6\\A6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jwanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jwan9\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -155,11 +155,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -190,7 +185,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
