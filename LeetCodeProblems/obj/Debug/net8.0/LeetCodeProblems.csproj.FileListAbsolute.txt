@@ -1,0 +1,15 @@
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\bin\Debug\net8.0\LeetCodeProblems.exe
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\bin\Debug\net8.0\LeetCodeProblems.deps.json
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\bin\Debug\net8.0\LeetCodeProblems.runtimeconfig.json
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\bin\Debug\net8.0\LeetCodeProblems.dll
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\bin\Debug\net8.0\LeetCodeProblems.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.AssemblyInfoInputs.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.AssemblyInfo.cs
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.csproj.CoreCompileInputs.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.sourcelink.json
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.dll
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\refint\LeetCodeProblems.dll
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.pdb
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\LeetCodeProblems.genruntimeconfig.cache
+C:\Users\jwan9\OneDrive\Skrivbord\C-Sharp\LeetCodeProblems\obj\Debug\net8.0\ref\LeetCodeProblems.dll
