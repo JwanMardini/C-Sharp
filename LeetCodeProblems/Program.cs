@@ -4,12 +4,9 @@
     {
         static void Main(string[] args)
         {
-            RomanToIntProblem problem = new RomanToIntProblem();
-
-            Console.WriteLine(problem.RomanToInt("III"));
-            Console.WriteLine(problem.RomanToInt("LVIII"));
-            Console.WriteLine(problem.RomanToInt("MCMXCIV"));
-            Console.WriteLine(problem.RomanToInt("IV"));
+            ValidParentheses problem = new ValidParentheses();
+            bool result = problem.IsValid("[}");
+            Console.Write(result);
 
         }
     }
