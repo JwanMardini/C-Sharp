@@ -19,7 +19,7 @@ secrets.json
 *.db
 
 # HTTP file used for testing
-*.http
+games.http
 
 # Logs
 *.log
