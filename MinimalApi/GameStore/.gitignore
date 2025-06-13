@@ -1,0 +1,35 @@
+
+# Build
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# ASP.NET Secrets
+secrets.json
+
+# Local database
+*.db
+
+# HTTP file used for testing
+*.http
+
+# Logs
+*.log
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
