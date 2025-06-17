@@ -1,6 +1,6 @@
 using System;
 
-namespace GameStore.Api.Endpoints;
+namespace GameStore.Api.Entities;
 
 public class Genre
 {

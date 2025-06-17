@@ -5,13 +5,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("GameStore");
 
-builder.Services.AddSqlite<GameStore.Api.Data.GameStoreContext>(connectionString);
+builder.Services.AddSqlite<GameStoreContext>(connectionString);
+// builder .Services.AddScoped<GameStoreContext>();
 
 var app = builder.Build();
 
 
 app.MapGamesEndpoints();
+app.MapGenresEndpoints();
 
-app.MigrateDB();
+await app.MigrateDBAsync();
 
 app.Run();
