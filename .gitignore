@@ -1,1 +1,17 @@
-.vs
+
+# Build
+bin/
+obj/
+
+
+# Visual Studio
+.vs/
+
+# ASP.NET Secrets
+secrets.json
+
+# Local database
+*.db
+
+# HTTP file used for testing
+games.http
